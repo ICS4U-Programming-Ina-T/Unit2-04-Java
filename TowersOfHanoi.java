@@ -16,16 +16,9 @@ class TowersOfHanoi {
     private static final String TO_PEG = " to peg ";
 
     /**
-     * Constructor for the program.
-     *
-     * @throws IllegalStateException for errors
+     * Empty constructor for the program.
      */
-    public static void towersOfHanoi() {
-        // Prevent instantiation
-        // Optional: throw an exception e.g. AssertionError
-        // if this ever *is* called
-        throw new IllegalStateException("Cannot be instantiated");
-    }
+    TowersOfHanoi() { }
 
     /**
      * This function calculates where the disks should be placed in.
@@ -69,7 +62,7 @@ class TowersOfHanoi {
 
         try {
             final int nOfDisksInt = Integer.parseInt(nOfDisksMain);
-            
+
             System.out.println();
             if (nOfDisksInt > 0) {
                 // function call to calculate moves
